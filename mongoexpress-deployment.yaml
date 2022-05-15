@@ -29,7 +29,7 @@ spec:
               key: mongo_root_password
         - name: MONGO_INIT_ADMINsCONFIGMAP
           valueFrom:
-            secretKeyRef:
+            configMapKeyRef:
               name: configmap
               key: mongo-service
               
