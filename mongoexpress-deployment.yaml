@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: my-mongdbexpress
+      app: my-mongodbexpress
   template:
     metadata:
       labels:
