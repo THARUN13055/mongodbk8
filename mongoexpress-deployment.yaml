@@ -17,17 +17,17 @@ spec:
         ports:
         - containerPort: 8081
         env:
-        - name: MONGO_INITDB_ADMINU_SERNAME
+        - name: MONGO_INITDB_ADMINUSERNAME
           valueFrom:
             secretKeyRef:
               name: mysecret
               Key: mongo_root_username 
-        - name: MONGO_INITDB_ADMIN_PASSWORD
+        - name: MONGO_INITDB_ADMINPASSWORD
           valueFrom:
             secretKeyRef:
               name: mysecret
               key: mongo_root_password
-        - name: MONGO_INIT_ADMIN_CONFIGMAP
+        - name: MONGO_INIT_ADMINsCONFIGMAP
           valueFrom:
             secretKeyRef:
               name: configmap
