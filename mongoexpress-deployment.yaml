@@ -21,7 +21,7 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mysecret
-              Key: mongo_root_username 
+              key: mongo_root_username
         - name: MONGO_INITDB_ADMINPASSWORD
           valueFrom:
             secretKeyRef:
